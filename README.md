@@ -5,29 +5,18 @@ SendEasy is a lightweight full-stack web application designed for **fast** and *
 
 ---
 
-## 🌐 Demo Screenshots
-
-### Landing Page (Light Mode)
-<img width="741" height="637" alt="Landing-page" src="https://github.com/user-attachments/assets/8d51b7ab-fec9-4431-b5f7-273fb3c70601" />
-
-
-### Landing Page (Dark Mode)
-<img width="741" height="637" alt="Night-time-mode" src="https://github.com/user-attachments/assets/526927f7-a5c5-475a-9d17-30d2edad33ab" />
-
-
-### File History
-<img width="741" height="637" alt="File-history" src="https://github.com/user-attachments/assets/4d743b85-6cf3-4013-a702-afba93045604" />
-
-
----
-
 ## 🚀 Features
 
 - **File Upload & Download** – Easily upload files and share links for instant access.  
 - **Clipboard Integration** – Copy files or text directly into the application.  
 - **Extendable Expiry** – File links expire after a set duration, with extension support.  
 - **Dark/Light Mode** – Toggle between day/night themes for better UX.  
-- **Minimal UI Design** – Clean, modern, responsive, and user-friendly interface.  
+- **Minimal UI Design** – Clean, modern, responsive, and user-friendly interface.
+
+| Light Mode | Dark Mode | File History |
+|------------|-----------|--------------|
+| <img src="https://github.com/user-attachments/assets/8d51b7ab-fec9-4431-b5f7-273fb3c70601" width="250"/> | <img src="https://github.com/user-attachments/assets/526927f7-a5c5-475a-9d17-30d2edad33ab" width="250"/> | <img src="https://github.com/user-attachments/assets/4d743b85-6cf3-4013-a702-afba93045604" width="250"/> |
+
 
 ---
 
