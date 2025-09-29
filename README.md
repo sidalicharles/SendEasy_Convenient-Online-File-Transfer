@@ -7,11 +7,27 @@ SendEasy is a lightweight full-stack web application designed for **fast** and *
 
 ## 🚀 Features
 
-- **File Upload & Download** – Easily upload files and share links for instant access.  
+- **One-Click Secure Sharing**
+  - Generate a unique **6-character alphanumeric password** per session for secure file reception.
+  - Passwords are automatically copied to the sender’s clipboard for convenience.
+- **Unified Content Box**
+  - Combine **text, images, and files** in a single send block.
+  - [Paste] button supports any copied item (text, screenshots, or files).
+- **Temporary File Retention**
+  - Files are available for **24 hours** by default.
+  - Extend button allows retention **only up to the next day** (cannot be stacked), ensuring storage efficiency.
+  - Delete button supports early removal of individual items or entire blocks.
 - **Clipboard Integration** – Copy files or text directly into the application.  
 - **Extendable Expiry** – File links expire after a set duration, with extension support.  
 - **Dark/Light Mode** – Toggle between day/night themes for better UX.  
 - **Minimal UI Design** – Clean, modern, responsive, and user-friendly interface.
+- - **Landing Page Simplicity**
+  - Initial interface shows only **[Send File]** and **[Receive File]**.
+  - Clicking the logo always returns to the Landing Page.
+- **Deployment & Performance**
+  - One-click Docker deployment for easy setup.  
+  - Automatic cleanup of expired files ensures performance and storage efficiency.  
+  - Backend enforces secure file access validation.  
 
 | Light Mode | Dark Mode | File History |
 |------------|-----------|--------------|
@@ -40,7 +56,7 @@ SendEasy is a lightweight full-stack web application designed for **fast** and *
 ### **DevOps & Tooling**
 - Docker – Containerization for deployment consistency  
 - npm / pnpm – Package management and build scripts  
-- GitHub – Version control and collaboration  
+- Git – Version control and collaboration  
 
 ---
 
