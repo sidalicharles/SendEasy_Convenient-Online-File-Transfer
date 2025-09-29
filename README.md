@@ -7,15 +7,10 @@ SendEasy is a lightweight full-stack web application designed for **fast** and *
 
 ## 🚀 Features
 
-- **One-Click Secure Sharing**
-  - Generate a unique **6-character alphanumeric password** per session for secure file reception.
-  - Passwords are automatically copied to the sender’s clipboard for convenience.
+- **One-Click Secure Sharing** - Generate a unique **6-character alphanumeric password** per session for secure file reception.
 - **Unified Content Box** - Combine **text, images, and files** in a single send block.
 - **Clipboard Integration** – Copy files or text directly into the application. 
-- **Temporary File Retention**
-  - Files are available for **24 hours** by default.
-  - Extend button allows retention **only up to the next day** (cannot be stacked), ensuring storage efficiency.
-  - Delete button supports early removal of individual items or entire blocks. 
+- **Temporary File Retention** - Files are available for **24 hours** by default. Extend button allows retention **only up to the next day** (cannot be stacked), ensuring storage efficiency. Delete button supports early removal of individual items or entire blocks. 
 - **Dark/Light Mode** – Toggle between day/night themes for better UX.  
 - **Minimal UI Design** – Clean, modern, responsive, and user-friendly interface.
 - **Landing Page Simplicity** - Clicking the logo always returns to the Landing Page.
