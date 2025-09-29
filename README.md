@@ -7,14 +7,15 @@ SendEasy is a lightweight full-stack web application designed for **fast** and *
 
 ## 🚀 Features
 
+- **One-Click Secure Sharing** – Generate a unique **6-character alphanumeric password** per session for secure file reception.
+- **Unified Content Box** – Combine **text, images, and files** in a single send block.
+- **Clipboard Integration** – Copy files or text directly into the application. 
+- **Temporary File Retention** – Files are available for **24 hours** by default. Extend button allows retention **only up to the next day** (cannot be stacked), ensuring storage efficiency. Delete button supports early removal of individual items or entire blocks.
+
 | Light Mode | Dark Mode | File History |
 |------------|-----------|--------------|
 | <img src="https://github.com/user-attachments/assets/8d51b7ab-fec9-4431-b5f7-273fb3c70601" width="250"/> | <img src="https://github.com/user-attachments/assets/526927f7-a5c5-475a-9d17-30d2edad33ab" width="250"/> | <img src="https://github.com/user-attachments/assets/4d743b85-6cf3-4013-a702-afba93045604" width="250"/> |
 
-- **One-Click Secure Sharing** – Generate a unique **6-character alphanumeric password** per session for secure file reception.
-- **Unified Content Box** – Combine **text, images, and files** in a single send block.
-- **Clipboard Integration** – Copy files or text directly into the application. 
-- **Temporary File Retention** – Files are available for **24 hours** by default. Extend button allows retention **only up to the next day** (cannot be stacked), ensuring storage efficiency. Delete button supports early removal of individual items or entire blocks. 
 - **Dark/Light Mode** – Toggle between day/night themes for better UX.  
 - **Minimal UI Design** – Clean, modern, responsive, and user-friendly interface.
 - **Landing Page Simplicity** – Clicking the logo always returns to the Landing Page.
