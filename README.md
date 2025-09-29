@@ -16,7 +16,6 @@ SendEasy is a lightweight full-stack web application designed for **fast** and *
 |------------|-----------|
 | <img src="https://github.com/user-attachments/assets/8d51b7ab-fec9-4431-b5f7-273fb3c70601" width="250"/> | <img src="https://github.com/user-attachments/assets/526927f7-a5c5-475a-9d17-30d2edad33ab" width="250"/> | 
 | All-in-one Sending | File History |
-|------------|-----------|
 |<img src="https://github.com/user-attachments/assets/90dcce4d-c60b-44b0-9107-a586b9e6b7e2" width="250"/>| <img src="https://github.com/user-attachments/assets/4d743b85-6cf3-4013-a702-afba93045604" width="250"/> |
 - **Dark/Light Mode** – Toggle between day/night themes for better UX.  
 - **Minimal UI Design** – Clean, modern, responsive, and user-friendly interface.
