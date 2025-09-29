@@ -2,6 +2,7 @@ import 'dotenv/config';
 import express, { ErrorRequestHandler } from 'express';
 import path from 'path';
 import authRoutes from './routes/auth';
+import sessionRoutes from './routes/sessions';
 import { errorHandler } from './middleware/errorHandler';
 import { SERVER_CONFIG } from './config/constants';
 import passport from './config/passport';
@@ -14,7 +15,8 @@ console.log('Environment variables loaded:', {
 
 const app = express();
 // Middleware
-app.use(express.json());
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
 // Initialize Passport
 app.use(passport.initialize());
@@ -24,9 +26,13 @@ const REACT_BUILD_FOLDER = path.join(__dirname, '..', 'frontend', 'dist');
 app.use(express.static(REACT_BUILD_FOLDER));
 app.use('/assets', express.static(path.join(REACT_BUILD_FOLDER, 'assets')));
 
+// Serve uploaded files
+const UPLOADS_FOLDER = path.join(process.cwd(), 'uploads');
+app.use('/uploads', express.static(UPLOADS_FOLDER));
+
 // Mount routes
 app.use('/api/auth', authRoutes);
-app.use('/api/files', require('./routes/fileTransfer').default);
+app.use('/api/sessions', sessionRoutes);
 
 if (process.env.STRIPE_SECRET_KEY) {
   import('./routes/webhook/stripeWebhook')
@@ -44,6 +50,7 @@ if (process.env.STRIPE_SECRET_KEY) {
       console.error('Failed to load Stripe routes:', err);
     });
 }
+
 // Important: Catch-all route to handle React Router paths
 // This should always be before error handler
 app.get('*', (_req, res) => {

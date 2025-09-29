@@ -1,31 +1,21 @@
-export interface ApiResponse<T> {
-  success: boolean;
-  data: T | null;
-  message?: string;
-}
-
 export interface FileItem {
   id: string;
   name: string;
   size: number;
   type: string;
-  url: string;
-  uploadedAt: string;
-}
-
-export interface TextItem {
-  id: string;
-  content: string;
-  createdAt: string;
+  url?: string;
+  content?: string;
 }
 
 export interface TransferBlock {
   id: string;
   sessionId: string;
-  textItems: TextItem[];
-  fileItems: FileItem[];
+  textContent?: string;
+  files: FileItem[];
+  images: FileItem[];
   createdAt: string;
   expiresAt: string;
+  isExpired: boolean;
 }
 
 export interface Session {
@@ -33,24 +23,18 @@ export interface Session {
   password: string;
   deviceId: string;
   createdAt: string;
-  expiresAt: string;
+  transfers: TransferBlock[];
 }
 
-export interface CreateSessionResponse {
-  session: Session;
-  password: string;
+export interface AppState {
+  currentView: 'landing' | 'send' | 'receive';
+  currentSession: Session | null;
+  isDarkMode: boolean;
+  receiverPassword: string;
 }
 
-export interface UploadResponse {
-  transferBlock: TransferBlock;
-}
-
-export interface SessionValidationResponse {
-  valid: boolean;
-  sessionId?: string;
-}
-
-export interface ExtendExpirationResponse {
+export interface ApiResponse<T> {
   success: boolean;
-  newExpiresAt: string;
+  data: T | null;
+  message?: string;
 }
